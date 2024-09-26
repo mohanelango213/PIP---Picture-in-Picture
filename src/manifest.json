@@ -1,0 +1,27 @@
+{
+  "name": "Picture-in-Picture",
+  "description": "Watch video in Picture-in-Picture",
+  "version": "1",
+  "icons": {
+    "128": "assets/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js":["contentScript.js"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "19": "assets/icon19.png",
+      "38": "assets/icon38.png"
+    }
+  },
+  "permissions": [
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "manifest_version": 3
+}
